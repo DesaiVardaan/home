@@ -1,0 +1,146 @@
+/* Reset default margins and paddings */
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	background-image: url('images/royal_arsenal_1888.webp');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	line-height: 1.5;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* Page title */
+.title {
+	color: red;
+	font-family: Arial;
+	font-size: 42px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* Navigation bar */
+nav {
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 10px;
+}
+
+nav ul li a {
+	border: 2px solid black;
+	display: inline-block;
+	padding: 5px;
+	background-color: #FF2D00;
+	color: black;
+	text-decoration: none;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+nav ul li a:hover {
+	background-color: #B01F00;
+}
+
+/* Content section */
+.main-content {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	margin-top: 20px;
+}
+
+h2 {
+	color: #FF5649;
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+
+.info {
+	margin-bottom: 20px;
+	border: 2px solid yellow;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+}
+
+.info p {
+	margin: 0;
+	color: black;
+}
+
+.info img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	background-color: #FF644F;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+footer::before,
+footer::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 50px;
+	background-color: red;
+}
+
+footer::before {
+	left: 0;
+}
+
+footer::after {
+	right: 0;
+}
+
+/* Back to Top Button */
+.back-to-top {
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+	width: 100px;
+	height: 50px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+	text-decoration: none;
+	opacity: 1; /* Make the button visible by default */
+	transition: opacity 0.3s ease;
+	z-index: 9999; /* Ensures the button appears on top of other elements */
+}
+
+.back-to-top:hover {
+	background-color: #555;
+}

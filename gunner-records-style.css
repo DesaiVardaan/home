@@ -1,0 +1,151 @@
+.title {
+  color: Red;
+  font-family: Arial;
+  font-size: 42px;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('images/bg1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+body h2 {
+  color: Red ;
+  text-align: center;
+  text-decoration: underline;
+}
+
+body h3 {
+  color: #FF2525;
+}
+
+div p {
+  color: white;
+  background-color: #FF5649;
+}
+
+img {
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.info {
+  margin-left: 100px;
+  margin-right: 100px;
+  border: 2px;
+  border-color: yellow;
+}
+
+.format2 {
+  background-color: gray;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+
+.format1 {
+  margin-right: 100px;
+  color: white;
+  background-color: gray;
+}
+
+/* navigation bar css code */
+nav {
+  color: black;
+  padding: 10px;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  border: 2px solid black;
+  display: inline-block;
+  padding: 5px;
+  background-color: #FF2D00;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px 10px;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  background-color: #B01F00;
+}
+
+footer {
+  text-align: center;
+  background-color: #FF644F;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+footer::before,
+footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  background-color: red;
+}
+
+footer::before {
+  left: 0;
+}
+
+footer::after {
+  right: 0;
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  text-decoration: none;
+  opacity: 1; /* Make the button visible by default */
+  transition: opacity 0.3s ease;
+  z-index: 9999; /* Ensures the button appears on top of other elements */
+}
+
+.back-to-top:hover {
+  background-color: #555;
+}

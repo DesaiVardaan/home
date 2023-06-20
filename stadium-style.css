@@ -1,0 +1,141 @@
+.title {
+    color: red;
+    font-family: Arial;
+    font-size: 42px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/emirates-stadium.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body h2 {
+    color: #1F2F7D;
+    text-align: center;
+}
+
+body p {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+/* navigation bar css code */
+nav {
+    color: black;
+    padding: 10px;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a {
+    border: 2px solid black;
+    display: inline-block;
+    padding: 5px;
+    background-color: #FF2D00;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #B01F00;
+}
+
+#stadium {
+    border: 0;
+    width: 900px;
+    height: 700px;
+    background-color: #FF5143;
+    margin: auto;
+    display: block;
+}
+
+.stadium-info {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stadium-info p {
+    color: #000;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    background-color: #FF644F;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+}
+
+footer::before,
+footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    background-color: red;
+}
+
+footer::before {
+    left: 0;
+}
+
+footer::after {
+    right: 0;
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    opacity: 1; /* Make the button visible by default */
+    transition: opacity 0.3s ease;
+    z-index: 9999; /* Ensures the button appears on top of other elements */
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
